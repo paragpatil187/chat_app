@@ -1,4 +1,5 @@
 import './App.css';
+import Sidebar from './Components/Sidebar';
 
 
 
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       hii
       <div className='app_body'>
-        
+        <Sidebar/>
 
       </div>
     </div>
