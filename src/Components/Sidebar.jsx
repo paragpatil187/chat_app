@@ -5,6 +5,7 @@ import DonutLargeIcon from "@material-ui/icons/DonutLarge"
 import React from 'react'
 import "../Components/sidebar.css"
 import { SearchOutlined } from '@material-ui/icons';
+import SidebarChat from './SidebarChat';
 const Sidebar = () => {
   return (
     <div className='side'>
@@ -32,6 +33,10 @@ const Sidebar = () => {
 
         </div>
         <div className="sidebar_chat">
+            <SidebarChat/>
+            <SidebarChat/>
+            <SidebarChat/>
+            <SidebarChat/>
             <SidebarChat/>
 
         </div>
