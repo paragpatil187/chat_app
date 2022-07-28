@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     padding:20px;
+    border-right: 1px solid lightgray;
 
 
 }
@@ -42,12 +43,12 @@
     border:none;
     margin-left: 10px;
 }
-.sidebar_container > .MuiSvgIcon-root{
+.sidebar_container  .MuiSvgIcon-root{
     color:gray;
     padding:10px;
 
 }
-.sidebar_chats{
+.sidebar_chat{
     flex:1;
     background-color:white;
     overflow: scroll;

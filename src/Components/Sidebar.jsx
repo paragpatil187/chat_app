@@ -8,15 +8,18 @@ import { SearchOutlined } from '@material-ui/icons';
 import SidebarChat from './SidebarChat';
 const Sidebar = () => {
   return (
-    <div className='side'>
+    <div className='sidebar'>
         <div className="sidebar_header">
             <Avatar/>
             <div className="sidebar_headerRight">
                 <IconButton>
                 <DonutLargeIcon/>
-                <ChatIcon/>
-                <MoreVertIcon/>
                 </IconButton>
+                <IconButton><ChatIcon/></IconButton>
+                <IconButton><MoreVertIcon/></IconButton>
+                
+                
+                
                
                
 
