@@ -29,7 +29,13 @@ const Chat = () => {
             <IconButton> <MoreVertIcon/></IconButton>
         </div>
         </div>
-        <div className="chat_body"></div>
+        <div className="chat_body">
+            <p className={`chat_message ${true} chat_reciever`}>
+                <span className='chat_name'>parag patil</span>
+                hello
+                <span className="chat_timestamp">3:52pm</span>
+            </p>
+        </div>
         <div className="chat_footer"></div>
     </div>
   )

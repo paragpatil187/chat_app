@@ -43,7 +43,7 @@
     border:none;
     margin-left: 10px;
 }
-.sidebar_container  .MuiSvgIcon-root{
+.sidebar_container > .MuiSvgIcon-root{
     color:gray;
     padding:10px;
 

@@ -24,3 +24,27 @@
     justify-content:space-between;
     min-width: 100px;
 }
+.chat_name{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+.chat_message{
+    position:relative;
+    font-size: 16px;
+    padding:10px;
+    width:fit-content;
+    border-radius: 10px;
+    background-color: #ffff;
+    margin-bottom: 30px;
+
+}
+.chat_timestamp{
+   font-size: xx-small;
+   margin-left: 10px; 
+}
+.chat_reciever{
+    margin-left: auto;
+    background-color: #dcf8c6;
+}
