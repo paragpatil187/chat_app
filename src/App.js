@@ -8,26 +8,23 @@ import Sidebar from './Components/Sidebar';
 
 
 function App() {
-  const [user,setUser]=useState(null)
+  const [user,setUser]=useState("parag")
   return (
     <div className="App">
       {!user?(
         <h1>login</h1>
       ):(
         <div className='app_body'>
-        <Router>
-        <Sidebar/>
         
-        <Route path="/rooms/:roomId">
+        <Sidebar/>
+        <Chat/>
+        
           
-          <Chat/>
-        </Route>
-        <Route path="/">
-          <Chat/>
-        </Route>
+        
+       
 
         
-        </Router>
+        
 
       </div>
       )}
