@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from "react-router-dom"
 import "./sidebarChat.css"
-import { Avatar,IconButton } from '@material-ui/core'
+import { Avatar } from '@material-ui/core'
 import db from './firebaseconfig';
 const SidebarChat = ({id,name,addNewChat}) => {
     const [avtarv,setavtarv]=useState("123");

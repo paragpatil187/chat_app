@@ -3,9 +3,8 @@ import "./chat.css"
 import { useParams } from "react-router-dom"
 import { Avatar, IconButton } from '@material-ui/core'
 import MoreVertIcon from '@material-ui/icons/MoreVert'
-// import ChatIcon from "@material-ui/icons/Chat";
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
-import { MessageSharp, SearchOutlined } from '@material-ui/icons';
+import {SearchOutlined } from '@material-ui/icons';
 import { AttachFile } from '@material-ui/icons';
 import MicIcon from "@material-ui/icons/Mic"
 import db from './firebaseconfig';
@@ -48,7 +47,7 @@ const Chat = () => {
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
 
-        setInput("")
+        setInput("");
 
     }
     return (
@@ -73,7 +72,7 @@ const Chat = () => {
             <div className="chat_body">
                 {messages.map((e) => (
 
-                    <p className={`chat_message ${true && "chat_reciever"}`}>
+                    <p className={`chat_message ${e.name === user.displayName && "chat_reciever"}`}>
                         <span className='chat_name'>{e.name}</span>
                         {e.message}
                         <span className="chat_timestamp">{
@@ -85,7 +84,10 @@ const Chat = () => {
             <div className="chat_footer">
                 <InsertEmoticonIcon />
                 <form>
-                    <input type="text" placeholder='Type a message' value={input} onChange={(e) => e.target.value} />
+                    <input type="text"
+                     placeholder='Type a message'
+                      value={input}
+                       onChange={(e) => setInput(e.target.value)} />
                     <button onClick={sendMessage}>send a message</button>
                 </form>
                 <MicIcon />
