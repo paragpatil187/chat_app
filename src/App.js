@@ -1,33 +1,32 @@
 import { useState } from 'react';
-import { Route,Router } from 'react-router-dom';
+import { Route,Routes } from 'react-router-dom';
 import './App.css';
 import Chat from './Components/Chat';
 import Login from './Components/Login';
 import Sidebar from './Components/Sidebar';
+import { useStateValue } from './Components/StateProvider';
 
-
+import {BrowserRouter as Router} from 'react-router-dom';
+import { RadioButtonUncheckedSharp } from '@material-ui/icons';
 
 
 function App() {
-  const [user,setUser]=useState(null)
+  const [{user},dispatch]=useStateValue();
+
   return (
     <div className="App">
       {!user?(
         <Login/>
       ):(
         <div className='app_body'>
-        
-        <Sidebar/>
-        <Chat/>
-        
+          <Sidebar/>
+          <Routes>
           
-        
-       
-
-        
-        
-
-      </div>
+          <Route path="/rooms/:roomId" element={<Chat/>}>
+          
+          </Route>
+          </Routes>
+         </div>
       )}
     </div>
     )
