@@ -71,7 +71,7 @@
 }
 .chat_body{
     flex:1;
-    background-image: url();
+    /* background-image: url(); */
     background-repeat: repeat;
     background-position: center;
     padding: 30px;

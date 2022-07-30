@@ -84,7 +84,7 @@ const Chat = () => {
             <div className="chat_footer">
                 <InsertEmoticonIcon />
                 <form>
-                    <input type="textff"
+                    <input type="text"
                      placeholder='Type a message'
                       value={input}
                        onChange={(e) => setInput(e.target.value)} />
