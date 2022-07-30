@@ -18,14 +18,14 @@ const Login = () => {
   return (
     <div className='login'>
         <div className="login_container">
-            <img alt="" src="https:upload.wikimedia.org" />
+            {/* <img alt="" src="https:upload.wikimedia.org/wijipedia" /> */}
             
-        </div>
+        
         <div className="login_text">
-            <h1>sign in to App</h1>
+            <h1>Sign In To App</h1>
         </div>
         <Button onClick={signIn}>Sign In With Google</Button>
-
+        </div>
     </div>
   )
 }

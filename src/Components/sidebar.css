@@ -39,16 +39,17 @@
     width:100%;
 
 }
-.sidebar_container{
-    border:none;
-    margin-left: 10px;
+.sidebar_container >input{
+  border: none;
+  margin-left: 10px;  
 }
+
 .sidebar_container > .MuiSvgIcon-root{
     color:gray;
     padding:10px;
 
 }
-.sidebar_chat{
+.sidebar_chats{
     flex:1;
     background-color:white;
     overflow: scroll;
