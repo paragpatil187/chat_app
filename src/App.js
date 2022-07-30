@@ -6,8 +6,7 @@ import Login from './Components/Login';
 import Sidebar from './Components/Sidebar';
 import { useStateValue } from './Components/StateProvider';
 
-import {BrowserRouter as Router} from 'react-router-dom';
-import { RadioButtonUncheckedSharp } from '@material-ui/icons';
+
 
 
 function App() {
