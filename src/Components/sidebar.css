@@ -27,6 +27,7 @@
     padding: 10px;
     height: 10px;
     background-color: #f6f6f6;
+    margin-bottom: 8px;
     
 
 }
@@ -37,11 +38,13 @@
     border-radius: 20px;
     height:35px;
     width:100%;
+    margin-top:10px;
 
 }
 .sidebar_container >input{
   border: none;
-  margin-left: 10px;  
+  margin-left: 10px; 
+  outline: none; 
 }
 
 .sidebar_container > .MuiSvgIcon-root{
@@ -52,6 +55,6 @@
 .sidebar_chats{
     flex:1;
     background-color:white;
-    overflow: scroll;
+    overflow-y: scroll;
 
 }
