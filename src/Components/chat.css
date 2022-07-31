@@ -55,8 +55,9 @@
     justify-content:space-between;
     height:62px;
     border-top:1px solid lightgray;
+    align-items: center;
 }
-.chat_footer >form{
+.chat_footer > form{
     flex:1;
     display:flex;
 }
