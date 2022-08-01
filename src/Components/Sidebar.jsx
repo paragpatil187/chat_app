@@ -8,10 +8,11 @@ import { SearchOutlined} from '@material-ui/icons';
 import SidebarChat from './SidebarChat';
 import db from "./firebaseconfig"
 import { useStateValue } from './StateProvider';
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 const Sidebar = () => {
     const [rooms,setRooms]=useState([]);
     const [{user},dispatch]=useStateValue();
-
+    const [logout, setLogout] = useState(false);
     useEffect(()=>{
       const unsubscribe=  db.collection("rooms").onSnapshot(snapshot=>(
             setRooms(snapshot.docs.map(doc =>({
@@ -25,6 +26,11 @@ const Sidebar = () => {
         }
         
     },[])
+    const exitApp = () => {
+      
+      window.location.reload();
+      setLogout(true);
+    };
   return (
     <div className='sidebar'>
         <div className="sidebar_header">
@@ -35,6 +41,11 @@ const Sidebar = () => {
                 </IconButton>
                 <IconButton><ChatIcon/></IconButton>
                 <IconButton><MoreVertIcon/></IconButton>
+                <IconButton>
+                <div onClick={exitApp}>
+                  <ExitToAppIcon />
+                </div>
+              </IconButton>
                 
                 
                 
