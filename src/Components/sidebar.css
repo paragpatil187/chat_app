@@ -46,6 +46,10 @@
   margin-left: 10px; 
   outline: none; 
 }
+.sidebar_container >input :focus{
+    border:none;
+    
+}
 
 .sidebar_container > .MuiSvgIcon-root{
     color:gray;
