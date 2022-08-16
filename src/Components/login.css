@@ -13,7 +13,9 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px;
 }
 .login_container > img{
-    object-fit: contain;
+    object-fit:fill;
+    width:100px;
+    /* border: 1px solid red; */
     height: 100px;
     margin-bottom: 40px;
 }
