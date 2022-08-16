@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <div className='login'>
         <div className="login_container">
-            {/* <img alt="" src="https:upload.wikimedia.org/wijipedia" /> */}
+            <img alt="" src="https://www.bing.com/th?id=OIP.1qSizqj2A8i2LRwI5nDcbgHaHz&w=195&h=206&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" />
             
         
         <div className="login_text">
