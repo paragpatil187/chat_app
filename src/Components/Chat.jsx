@@ -82,15 +82,17 @@ const Chat = () => {
 
             </div>
             <div className="chat_footer">
-                <InsertEmoticonIcon />
+                
                 <form>
+                <InsertEmoticonIcon />
                     <input type="text"
                      placeholder='Type a message'
                       value={input}
                        onChange={(e) => setInput(e.target.value)} />
                     <button onClick={sendMessage}>send a message</button>
+                    <MicIcon />
                 </form>
-                <MicIcon />
+                
             </div>
         </div>
     )

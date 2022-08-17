@@ -31,6 +31,13 @@ const Sidebar = () => {
       window.location.reload();
       setLogout(true);
     };
+    const handleRemove=(idx)=>{
+      const filterdata=rooms.filter((e)=>{
+        return e.id!=idx
+      })
+    }
+      
+    
   return (
     <div className='sidebar'>
         <div className="sidebar_header">
@@ -70,7 +77,12 @@ const Sidebar = () => {
           {rooms.map(room=>(
             <SidebarChat key={room.id} id={room.id}
             name={room.data.name}/>
-          ))}
+            
+          ))
+          
+          }
+          
+
         </div>
 
     </div>
