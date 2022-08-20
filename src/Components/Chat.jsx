@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./chat.css"
+import "../Components/CSS/chat.css"
 import { useParams } from "react-router-dom"
 import { Avatar, IconButton } from '@material-ui/core'
 import MoreVertIcon from '@material-ui/icons/MoreVert'

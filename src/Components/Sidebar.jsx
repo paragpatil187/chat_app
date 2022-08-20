@@ -3,7 +3,7 @@ import  MoreVertIcon  from '@material-ui/icons/MoreVert'
 import ChatIcon from "@material-ui/icons/Chat";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge"
 import React, { useEffect, useState } from 'react'
-import "../Components/sidebar.css"
+import "../Components/CSS/sidebar.css"
 import { SearchOutlined} from '@material-ui/icons';
 import SidebarChat from './SidebarChat';
 import db from "./firebaseconfig"
