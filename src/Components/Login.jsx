@@ -22,7 +22,7 @@ const Login = () => {
             
         
         <div className="login_text">
-            <h1>Sign In To App</h1>
+            <h1>Sign In To whatsApp</h1>
         </div>
         <Button onClick={signIn}>Sign In With Google</Button>
         </div>
