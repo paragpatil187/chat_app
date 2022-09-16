@@ -70,9 +70,9 @@ const Chat = () => {
                 </div>
             </div>
             <div className="chat_body">
-                {messages.map((e) => (
+                {messages.map((e,index) => (
 
-                    <p className={`chat_message ${e.name === user.displayName && "chat_reciever"}`}>
+                    <p key={index} className={`chat_message ${e.name === user.displayName && "chat_reciever"}`}>
                         <span className='chat_name'>{e.name}</span>
                         {e.message}
                         <span className="chat_timestamp">{
