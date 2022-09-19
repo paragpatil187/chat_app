@@ -67,7 +67,7 @@ const Chat = () => {
 
                     </IconButton>
                     <IconButton><AttachFile /></IconButton>
-                    <IconButton>  <MoreVertIcon /></IconButton>
+                    <IconButton>  <MoreVertIcon onClick={()=>setShowmenu(!showmenu)} /></IconButton>
                    {showmenu? <div className="movert_menu">
                         <p>Clear messages</p>
                         <p>Group info</p>
