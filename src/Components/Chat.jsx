@@ -51,6 +51,9 @@ const Chat = () => {
         setInput("");
 
     }
+    const clearMessage=()=>{
+        
+    }
     return (
         <div className='chat'>
             <div className="chat_header">
@@ -69,14 +72,14 @@ const Chat = () => {
                     <IconButton><AttachFile /></IconButton>
                     <IconButton>  <MoreVertIcon onClick={()=>setShowmenu(!showmenu)} /></IconButton>
                    {showmenu? <div className="movert_menu">
-                        <p>Clear messages</p>
+                        <p onClick={()=>clearMessage()}>Clear messages</p>
                         <p>Group info</p>
                         <p>Exit Group</p>
                     </div>:null}
                 </div>
             </div>
             <div className="chat_body">
-                {messages.map((e,index) => (
+                {messages?.map((e,index) => (
 
                     <p key={index} className={`chat_message ${e.name === user.displayName && "chat_reciever"}`}>
                         <span className='chat_name'>{e.name}</span>
