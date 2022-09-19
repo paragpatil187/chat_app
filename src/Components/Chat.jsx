@@ -17,7 +17,8 @@ const Chat = () => {
     const { roomId } = useParams();
     const [roomName, setRoomName] = useState("");
     const [{ user }, dispatch] = useStateValue();
-    const [messages, setMessages] = useState([])
+    const [messages, setMessages] = useState([]);
+    const [showmenu,setShowmenu]=useState(false)
     useEffect(() => {
         if (roomId) {
             db.collection("rooms").doc(roomId).onSnapshot(snapshot => (
@@ -67,11 +68,11 @@ const Chat = () => {
                     </IconButton>
                     <IconButton><AttachFile /></IconButton>
                     <IconButton>  <MoreVertIcon /></IconButton>
-                    <div>
+                   {showmenu? <div className="movert_menu">
                         <p>Clear messages</p>
                         <p>Group info</p>
                         <p>Exit Group</p>
-                    </div>
+                    </div>:null}
                 </div>
             </div>
             <div className="chat_body">
