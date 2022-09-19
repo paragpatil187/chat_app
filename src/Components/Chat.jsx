@@ -66,7 +66,12 @@ const Chat = () => {
 
                     </IconButton>
                     <IconButton><AttachFile /></IconButton>
-                    <IconButton> <MoreVertIcon /></IconButton>
+                    <IconButton>  <MoreVertIcon /></IconButton>
+                    <div>
+                        <p>Clear messages</p>
+                        <p>Group info</p>
+                        <p>Exit Group</p>
+                    </div>
                 </div>
             </div>
             <div className="chat_body">
