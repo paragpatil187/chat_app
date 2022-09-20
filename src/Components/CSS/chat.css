@@ -86,12 +86,16 @@ right: 35px;
 top: 73.5px;
 transform: scale(1);
 opacity: 1;
+position: absolute;
+z-index: 1;
+cursor: pointer;
 
 }
 .movert_menu p{
-    padding: 9px 0;
+    padding: 9px;
     background-color:rgb(237, 225, 225);
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(1,.26),0 2px 10px 0 rgba(1,.16);
     margin:2px
   }
+  
