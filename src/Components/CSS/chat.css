@@ -84,11 +84,9 @@
 transform-origin: right top 0px;
 right: 11%;
 top: 73.5px;
-transform: scale(1);
 opacity: 1;
 position: absolute;
 z-index: 1;
-cursor: pointer;
 
 }
 .movert_menu p{
@@ -97,6 +95,7 @@ cursor: pointer;
     background-color: aliceblue;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(1,.26),0 2px 10px 0 rgba(1,.16);
-    margin:2px
+    margin:2px;
+    cursor:pointer;
   }
   

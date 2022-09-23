@@ -51,7 +51,11 @@ const Chat = () => {
         setInput("");
 
     }
-    const clearMessage=()=>{
+    const clearMessage=(roomId)=>{
+        db.collection("rooms").doc(roomId).collection("messages").onSnapshot((snapshot) => 
+        setMessages(snapshot.docs.map((doc) =>
+            doc.data==null))
+    )
         
     }
     return (
@@ -72,7 +76,7 @@ const Chat = () => {
                     <IconButton><AttachFile /></IconButton>
                     <IconButton>  <MoreVertIcon onClick={()=>setShowmenu(!showmenu)} /></IconButton>
                    {showmenu? <div className="movert_menu">
-                        <p onClick={()=>clearMessage()}>Clear messages</p>
+                        <p onClick={()=>clearMessage(roomId)}>Clear messages</p>
                         <p>Group info</p>
                         <p>Exit Group</p>
                     </div>:null}
